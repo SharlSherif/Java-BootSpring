@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Basic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class BinarySearchImpl {
     @Autowired
-    private ISortAlgorithm _SortAlgorithm;
+    private ISortAlgorithm bubbleSort;
 
     public int binarySearch(int[] numbers, int numberToSearchFor) {
-        int[] sortedNumbers = this._SortAlgorithm.sort(numbers);
+        int[] sortedNumbers = bubbleSort.sort(numbers);
         return 3;
     }
 }

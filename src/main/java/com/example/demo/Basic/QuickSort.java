@@ -1,6 +1,8 @@
-package com.example.demo;
+package com.example.demo.Basic;
 
-//@Component
+import org.springframework.stereotype.Component;
+
+@Component
 public class QuickSort implements ISortAlgorithm {
     public int[] sort(int[] numbersToSort) {
         System.out.print("QuickSort");
